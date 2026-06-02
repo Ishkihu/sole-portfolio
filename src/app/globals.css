@@ -24,3 +24,41 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-entry {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@layer utilities {
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% } 
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+  .animate-typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgb(96, 165, 250);
+    width: 0;
+    max-width: max-content; 
+    animation: 
+      typing 3.5s steps(45, end) 0.5s forwards,
+      blink 0.75s step-end infinite;
+  }
+}

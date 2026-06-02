@@ -16,62 +16,98 @@ export interface Experience {
 export interface Project {
   title: string;
   description: string;
-  githubUrl: string;
+  githubUrl?: string;
   tech: string[];
-  category: 'System' | 'Security' | 'Database' | 'Full-Stack';
+  // Updated to include 'Academic' and 'All' matching your strict union type
+  category: 'Capstone' | 'Academic' | 'Personal' | 'Industry' | 'All';
+  award?: string;
 }
 
 export const skillsData: Skill[] = [
-  { name: 'Java', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', description: 'Intermediate experience building robust applications.' },
-  { name: 'C++', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg', description: 'Object-oriented programming and software architecture.' },
-  { name: 'C', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg', description: 'System programming and algorithm design.' },
-  { name: 'MySQL', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', description: 'Database layout, relational schemas, and complex querying.' },
-  { name: 'JavaScript', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', description: 'Developing interactive elements and dynamic web views.' },
-  { name: 'HTML5/CSS3', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', description: 'Semantic structuring and fluid, responsive design paradigms.' }
+  { name: 'Laravel / PHP', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg', description: 'Developing core MVC applications, middleware, and secure routing architectures.' },
+  { name: 'Node.js', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', description: 'Building scalable asynchronous APIs and fast backend runtime services.' },
+  { name: 'PostgreSQL / MySQL', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', description: 'Database layout, index tuning for large datasets, and relational schemas.' },
+  { name: 'Java', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', description: 'Object-oriented application building and system algorithm design.' },
+  { name: 'JavaScript / TypeScript', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', description: 'Implementing fluid user states, custom UI animations, and clean type-safety.' },
+  { name: 'Linux (Ubuntu)', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', description: 'Managing environment setups, package deployments, and CLI workflows.' }
 ];
 
 export const experiencesData: Experience[] = [
   {
-    role: 'Backend Developer (Capstone Project)',
-    company: 'E-TIRE System',
-    date: 'October 2024 - Present',
+    role: 'Full-Stack Developer (OJT Internship)',
+    company: 'Dyn Edge Philippines Inc.',
+    date: '2026',
     details: [
-      'Developing a comprehensive management and tracking infrastructure for vulcanizing shop operations.',
-      'Analyzing workflow pain points to engineer clean relational database models.',
-      'Implementing scalable backend logic to track real-time inventory lifecycles seamlessly.'
+      'Engineered functional client operations utilizing the Laravel MVC framework.',
+      'Optimized database performance by executing strategic SQL Indexing functions for heavy datasets.',
+      'Designed and executed legacy data transfer modules to migrate data smoothly into newly deployed systems.',
+      'Utilized JavaScript, PHP, and Node.js to write flexible operational components based on client criteria.',
+      'Maintained an Ubuntu Linux development ecosystem to streamline staging and package configurations.'
     ]
   },
   {
-    role: 'Assistant Student Teacher',
-    company: 'SANHS Faculty',
-    date: 'September 2018',
+    role: 'Media Manager & Coordinator',
+    company: 'Boluntaryong TuPians (University Org)',
+    date: '2022 - 2023',
     details: [
-      'Coordinated with faculty to map out structured technical lesson blocks.',
-      'Managed evaluation matrices and schedules to support class progress tracking.'
+      'Produced and engineered multi-angle video logs for broad organization release channels.',
+      'Collaborated closely across technical branches to map out job allocations and communications grids.'
+    ]
+  },
+  {
+    role: 'Student Assistant',
+    company: 'High School Faculty',
+    date: '2019 - 2020',
+    details: [
+      'Built advanced progress trackers using spreadsheet architectures to document student metrics.',
+      'Managed evaluation processing, metric logging, and test administration matrices.'
+    ]
+  },
+  {
+    role: 'Library Assistant',
+    company: 'Elementary School Library',
+    date: '2015 - 2016',
+    details: [
+      'Organized physical knowledge inventory systematically mapped to target learning stages.',
+      'Partnered with administration units to catalog multi-tier media arrays smoothly.'
     ]
   }
 ];
 
 export const projectsData: Project[] = [
   {
-    title: 'FORTUNA QUEST',
-    description: 'A logic implementation tool developed in C that maps dynamic system outcomes using randomized number generators.',
-    githubUrl: 'https://github.com/Ishkihu/RouletteGame',
-    tech: ['C', 'CLI', 'Algorithms'],
-    category: 'System'
+    title: 'E-Tire MIS',
+    description: 'An enterprise tracking management information system built for Queen R. Tire Supply & Vulcanizing Shop. Features optimized data pipelines connecting full CRUD features with low-latency responsiveness.',
+    githubUrl: 'https://etire-mis.vercel.app/',
+    tech: ['Node.js', 'PostgreSQL', 'Agile/Sprints', 'Deployed', 'React' ,'REST API'],
+    category: 'Capstone',
+    award: '🏆 2nd Outstanding System Award (2025-2026)'
+  },
+  {
+    title: 'SmartDorm Management System',
+    description: 'An architectural layout managing housing parameters. Features a highly locked database schema enforcing strict system access control parameters across custom API junctions.',
+    tech: ['PostgreSQL', 'API Design', 'Feasibility Studies', 'Database System'],
+    category: 'Academic' // Assigned to Academic category matching your curriculum track
+  },
+  {
+    title: 'PawPedia',
+    description: 'An interactive information web app styled with fluid components and motion vectors to elevate standard reading interfaces.',
+    githubUrl: 'https://github.com/Ishkihu', 
+    tech: ['HTML5', 'CSS3', 'UI Motion', 'Frontend'],
+    category: 'Personal'
   },
   {
     title: 'BINARY ENCRYPTION & DECRYPTION',
-    description: 'A cryptography-focused C++ engine utilizing low-level data structures to lock and translate stream data securely via external text arrays.',
+    description: 'A cryptography layout utilizing low-level data flows to seal and decode text arrays cleanly.',
     githubUrl: 'https://github.com/Ishkihu/BinaryEncryption-Decryption',
     tech: ['C++', 'Security', 'File I/O'],
-    category: 'Security'
+    category: 'Academic' // Assigned to Academic tracking
   },
   {
     title: 'DATABASE LOGIN SYSTEM',
-    description: 'An application connecting core MySQL database schemas with a clean Java logic layer to enforce user registration and session checks.',
+    description: 'A structural engine connecting internal MySQL servers to secure Java session validators.',
     githubUrl: 'https://github.com/Ishkihu/LoginSystem-Database',
-    tech: ['Java', 'MySQL', 'JDBC'],
-    category: 'Database'
+    tech: ['Java', 'MySQL', 'JDBC', 'Auth Systems'],
+    category: 'Academic' // Assigned to Academic tracking
   }
 ];
