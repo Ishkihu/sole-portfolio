@@ -24,12 +24,20 @@ export interface Project {
 }
 
 export const skillsData: Skill[] = [
-  { name: 'Laravel / PHP', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg', description: 'Developing core MVC applications, middleware, and secure routing architectures.' },
+  { name: 'Laravel', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg', description: 'Developing core MVC applications, middleware, and secure routing architectures.' },
+  { name: 'PHP', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg', description: 'Server-side scripting, object-oriented backend programming, and native database abstractions.' },
   { name: 'Node.js', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', description: 'Building scalable asynchronous APIs and fast backend runtime services.' },
   { name: 'PostgreSQL / MySQL', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', description: 'Database layout, index tuning for large datasets, and relational schemas.' },
   { name: 'Java', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', description: 'Object-oriented application building and system algorithm design.' },
-  { name: 'JavaScript / TypeScript', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', description: 'Implementing fluid user states, custom UI animations, and clean type-safety.' },
-  { name: 'Linux (Ubuntu)', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', description: 'Managing environment setups, package deployments, and CLI workflows.' }
+  { name: 'C++', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg', description: 'Low-level structural logic, memory optimization models, and core object-oriented algorithm execution.' },
+  { name: 'HTML5', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', description: 'Structuring semantic document object models (DOM), accessible layouts, and SEO-friendly web architecture.' },
+  { name: 'CSS3', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', description: 'Crafting responsive layout matrices, custom keyframe animations, and utility-first design overrides.' },
+  { name: 'JavaScript', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', description: 'Asynchronous event driving, DOM manipulation, functional ES6+ scripts, and dynamic state tracking.' },
+  { name: 'TypeScript', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', description: 'Implementing strict structural typing, interface contracts, compile-time error catching, and explicit type safety.' },
+  { name: 'Linux (Ubuntu)', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', description: 'Managing environment setups, package deployments, and CLI workflows.' },
+  { name: 'VS Code', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg', description: 'Managing advanced workspace debugging workflows, cross-environment staging, and terminal workspace optimization.' },
+  { name: 'Flutter', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', description: 'Understanding the fundamentals of cross-platform UI development using widgets and state management theories.' },
+  { name: 'Dart', iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg', description: 'Learning basic syntax, object-oriented principles, and reactive programming concepts with streams and futures.' }
 ];
 
 export const experiencesData: Experience[] = [
