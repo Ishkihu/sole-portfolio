@@ -105,14 +105,14 @@ export const projectsData: Project[] = [
     category: 'Personal'
   },
   {
-    title: 'BINARY ENCRYPTION & DECRYPTION',
+    title: 'Binary Encryption-Decryption',
     description: 'A cryptography layout utilizing low-level data flows to seal and decode text arrays cleanly.',
     githubUrl: 'https://github.com/Ishkihu/BinaryEncryption-Decryption',
     tech: ['C++', 'Security', 'File I/O'],
     category: 'Academic' // Assigned to Academic tracking
   },
   {
-    title: 'DATABASE LOGIN SYSTEM',
+    title: 'Database Login System',
     description: 'A structural engine connecting internal MySQL servers to secure Java session validators.',
     githubUrl: 'https://github.com/Ishkihu/LoginSystem-Database',
     tech: ['Java', 'MySQL', 'JDBC', 'Auth Systems'],
