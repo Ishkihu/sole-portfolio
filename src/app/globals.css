@@ -25,6 +25,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media print {
+  body {
+    background: #ffffff;
+    color: #0f172a;
+  }
+
+  body > header,
+  body > footer,
+  body > canvas,
+  .fixed.bottom-6.right-6 {
+    display: none !important;
+  }
+
+  main {
+    max-width: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
