@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowUpRight, Github, Mail, MapPin, Printer } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin, Printer } from 'lucide-react';
 import { experiencesData, projectsData, skillsData } from '@/data/projects';
 
 export default function CvPage() {
@@ -43,7 +43,7 @@ export default function CvPage() {
                 johnvictoresquejo@gmail.com
               </a>
               <a href="https://github.com/Ishkihu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-slate-800 bg-slate-900/50 px-3 py-2 transition-colors hover:border-slate-700 hover:text-slate-200 print:border-slate-200 print:bg-transparent">
-                <Github className="h-4 w-4 text-blue-400" />
+                <ArrowUpRight className="h-4 w-4 text-blue-400" />
                 github.com/Ishkihu
               </a>
               <div className="inline-flex items-center gap-2 rounded-xl border border-slate-800 bg-slate-900/50 px-3 py-2 print:border-slate-200 print:bg-transparent">
