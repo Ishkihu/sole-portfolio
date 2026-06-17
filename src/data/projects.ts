@@ -42,9 +42,9 @@ export const skillsData: Skill[] = [
 
 export const experiencesData: Experience[] = [
   {
-    role: 'Full-Stack Developer (OJT Internship)',
+    role: 'Full-Stack Software Engineer (OJT Internship)',
     company: 'Dyn Edge Philippines Inc.',
-    date: '2026',
+    date: 'January - May | 2026',
     details: [
       'Engineered functional client operations utilizing the Laravel MVC framework.',
       'Optimized database performance by executing strategic SQL Indexing functions for heavy datasets.',
@@ -54,32 +54,42 @@ export const experiencesData: Experience[] = [
     ]
   },
   {
-    role: 'Media Manager & Coordinator',
-    company: 'Boluntaryong TuPians (University Org)',
-    date: '2022 - 2023',
+    role: 'Backend Developer (Capstone Project)',
+    company: 'Queen R. Tire Supply & Vulcanizing Shop',
+    date: 'August - May | 2025-2026',
     details: [
-      'Produced and engineered multi-angle video logs for broad organization release channels.',
-      'Collaborated closely across technical branches to map out job allocations and communications grids.'
-    ]
-  },
-  {
-    role: 'Student Assistant',
-    company: 'High School Faculty',
-    date: '2019 - 2020',
-    details: [
-      'Built advanced progress trackers using spreadsheet architectures to document student metrics.',
-      'Managed evaluation processing, metric logging, and test administration matrices.'
-    ]
-  },
-  {
-    role: 'Library Assistant',
-    company: 'Elementary School Library',
-    date: '2015 - 2016',
-    details: [
-      'Organized physical knowledge inventory systematically mapped to target learning stages.',
-      'Partnered with administration units to catalog multi-tier media arrays smoothly.'
+      'Developed and maintained the backend API endpoints for the E-Tire MIS.',
+      'Implemented database schemas and optimized queries for efficient data retrieval.',
+      'Collaborated with frontend developers to integrate RESTful APIs with the user interface.'
     ]
   }
+  // {
+  //   role: 'Media Manager & Coordinator',
+  //   company: 'Boluntaryong TuPians (University Org)',
+  //   date: '2022 - 2023',
+  //   details: [
+  //     'Produced and engineered multi-angle video logs for broad organization release channels.',
+  //     'Collaborated closely across technical branches to map out job allocations and communications grids.'
+  //   ]
+  // },
+  // {
+  //   role: 'Student Assistant',
+  //   company: 'High School Faculty',
+  //   date: '2019 - 2020',
+  //   details: [
+  //     'Built advanced progress trackers using spreadsheet architectures to document student metrics.',
+  //     'Managed evaluation processing, metric logging, and test administration matrices.'
+  //   ]
+  // },
+  // {
+  //   role: 'Library Assistant',
+  //   company: 'Elementary School Library',
+  //   date: '2015 - 2016',
+  //   details: [
+  //     'Organized physical knowledge inventory systematically mapped to target learning stages.',
+  //     'Partnered with administration units to catalog multi-tier media arrays smoothly.'
+  //   ]
+  // }
 ];
 
 export const projectsData: Project[] = [
